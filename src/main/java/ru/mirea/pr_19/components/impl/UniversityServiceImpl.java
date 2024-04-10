@@ -4,20 +4,20 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
-import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.mirea.pr_19.components.EmailService;
+
 import ru.mirea.pr_19.components.UniversityService;
-import ru.mirea.pr_19.models.Student;
 import ru.mirea.pr_19.models.University;
-import ru.mirea.pr_19.repositories.StudentRepository;
 import ru.mirea.pr_19.repositories.UniversityRepository;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 
@@ -35,7 +35,13 @@ public class UniversityServiceImpl implements UniversityService {
     public List<University> getUniversities() {
         log.info("Find all universities");
 
-        return universityRepository.findAll();
+        List<University> universities = universityRepository.findAll();
+
+        for (University university : universities) {
+            Hibernate.initialize(university.getStudents());
+        }
+
+        return new ArrayList<>(universities);
     }
 
     @Override
@@ -54,8 +60,8 @@ public class UniversityServiceImpl implements UniversityService {
         university.setName(name);
         university.setCreationDate(date);
 
-        String message = "University " + name + " was saved";
-        emailService.sendEmail(message);
+        //String message = "University " + name + " was saved";
+        //emailService.sendEmail(message);
 
         return universityRepository.save(university);
     }

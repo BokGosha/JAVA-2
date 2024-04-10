@@ -58,8 +58,8 @@ public class StudentServiceImpl implements StudentService {
         student.setMiddleName(middleName);
         student.setLastName(lastName);
 
-        String message = "Student " + firstName + " was saved";
-        emailService.sendEmail(message);
+        //String message = "Student " + firstName + " was saved";
+        //emailService.sendEmail(message);
 
         return studentRepository.save(student);
     }
@@ -89,17 +89,17 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public void addStudentToUniversity(Student student, University university) {
-        log.info("Add student with id {} to university with id {}", student.getId(), university.getId());
-
         student.setUniversity(university);
 
         university.getStudents().add(student);
 
-        String message = "Student with firstName " + student.getFirstName() + " was saved";
-        emailService.sendEmail(message);
+        //String message = "Student with firstName " + student.getFirstName() + " was saved";
+        //emailService.sendEmail(message);
 
         universityRepository.saveAndFlush(university);
         studentRepository.save(student);
+
+        log.info("Add student with id {} to university with id {}", student.getId(), university.getId());
     }
 
     @Override

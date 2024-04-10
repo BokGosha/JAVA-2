@@ -37,7 +37,7 @@ public class StudentController {
             return new ResponseEntity<>("Student{\"id\": " + id + "} was not found", HttpStatus.NOT_FOUND);
         }
 
-        return new ResponseEntity<>(student, HttpStatus.OK);
+        return ResponseEntity.ok(student);
     }
 
     @GetMapping

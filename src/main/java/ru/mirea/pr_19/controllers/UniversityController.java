@@ -24,15 +24,15 @@ public class UniversityController {
         return ResponseEntity.status(HttpStatus.CREATED).body(university);
     }
 
-    @GetMapping(value = "/{id}")
-    public @ResponseBody ResponseEntity<?> getUniversity(@PathVariable Long id) {
+    @GetMapping("/{id}")
+    public ResponseEntity<?> getUniversity(@PathVariable Long id) {
         University university = universityService.getUniversityById(id);
 
         if (university == null) {
             return new ResponseEntity<>("University{\"id\": " + id + "} was not found", HttpStatus.NOT_FOUND);
         }
 
-        return new ResponseEntity<>(university, HttpStatus.OK);
+        return ResponseEntity.ok(university);
     }
 
     @GetMapping
