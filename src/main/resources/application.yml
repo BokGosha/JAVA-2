@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 2205
+  jpa:
+    hibernate:
+      ddl-auto: create
+  mail:
+    host: smtp.yandex.ru
+    port: 465
+    protocol: smtps
+    username: bokgosha@yandex.ru
+    password: qtxselgtcdgeljsm
