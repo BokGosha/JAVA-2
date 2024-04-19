@@ -1,4 +1,4 @@
-package ru.mirea.pr_19.components.impl;
+package ru.mirea.pr_19.services.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Async;
@@ -7,7 +7,7 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.stereotype.Service;
 
-import ru.mirea.pr_19.components.EmailService;
+import ru.mirea.pr_19.services.EmailService;
 
 @Service
 @RequiredArgsConstructor

@@ -1,8 +1,9 @@
-package ru.mirea.pr_19.models;
+package ru.mirea.pr_19.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;
+
+import ru.mirea.pr_19.dto.UniversityDTO;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -20,9 +21,14 @@ public class University {
 
     @Column(name = "name")
     private String name;
+
     @Column(name = "creation_date")
-    private LocalDate creationDate;
+    private String creationDate;
 
     @OneToMany(mappedBy = "university")
     private List<Student> students = new ArrayList<>();
+
+    public UniversityDTO toDto() {
+        return new UniversityDTO(id, name, creationDate, students.stream().map(Student::toDto).toList());
+    }
 }

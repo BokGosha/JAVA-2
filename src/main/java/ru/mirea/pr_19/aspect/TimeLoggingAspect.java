@@ -1,4 +1,4 @@
-package ru.mirea.pr_19;
+package ru.mirea.pr_19.aspect;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -20,6 +20,6 @@ public class TimeLoggingAspect {
         return result;
     }
 
-    @Pointcut("within(ru.mirea.pr_19.components.impl.*)")
+    @Pointcut("within(ru.mirea.pr_19.services.impl.*)")
     public void allServiceMethods() {}
 }

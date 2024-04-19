@@ -1,4 +1,4 @@
-package ru.mirea.pr_19.components.impl;
+package ru.mirea.pr_19.services.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
@@ -9,7 +9,8 @@ import org.springframework.jmx.export.annotation.ManagedOperation;
 import org.springframework.jmx.export.annotation.ManagedResource;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-import ru.mirea.pr_19.components.ShedulerService;
+
+import ru.mirea.pr_19.services.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,8 +21,8 @@ import java.util.concurrent.TimeUnit;
 @ManagedResource
 @RequiredArgsConstructor
 public class ShedulerServiceImpl implements ShedulerService {
-    private final UniversityServiceImpl universityService;
-    private final StudentServiceImpl studentService;
+    private final UniversityService universityService;
+    private final StudentService studentService;
     private final ObjectMapper mapper;
 
     @Value("${application.persistent-dir}")
@@ -30,6 +31,7 @@ public class ShedulerServiceImpl implements ShedulerService {
     @SneakyThrows
     @ManagedOperation
     @Scheduled(fixedDelay = 10, timeUnit = TimeUnit.SECONDS)
+    @Override
     public void persist() {
         File dir = new File(persistentDir);
 

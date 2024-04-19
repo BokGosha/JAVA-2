@@ -1,80 +1,47 @@
 package ru.mirea.pr_19.controllers;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.stereotype.Controller;
 
-import ru.mirea.pr_19.components.impl.UniversityServiceImpl;
-import ru.mirea.pr_19.models.University;
+import ru.mirea.pr_19.dto.UniversityDTO;
+import ru.mirea.pr_19.services.UniversityService;
 
-import java.time.LocalDate;
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/universities")
 @RequiredArgsConstructor
 public class UniversityController {
-    private final UniversityServiceImpl universityService;
+    private final UniversityService universityService;
 
-    @PostMapping
-    public @ResponseBody ResponseEntity<University> createUniversity(@RequestBody University request) {
-        University university = universityService.addUniversity(request.getName(), request.getCreationDate());
-
-        return ResponseEntity.status(HttpStatus.CREATED).body(university);
+    @GetMapping
+    public List<UniversityDTO> getUniversities() {
+        return universityService.getUniversities();
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> getUniversity(@PathVariable Long id) {
-        University university = universityService.getUniversityById(id);
-
-        if (university == null) {
-            return new ResponseEntity<>("University{\"id\": " + id + "} was not found", HttpStatus.NOT_FOUND);
-        }
-
-        return ResponseEntity.ok(university);
+    public UniversityDTO getUniversityById(@PathVariable Long id) {
+        return universityService.getUniversityById(id);
     }
 
-    @GetMapping
-    public ResponseEntity<List<University>> getAllUniversities() {
-        List<University> universities = universityService.getUniversities();
-
-        if (universities.isEmpty()) {
-            return ResponseEntity.noContent().build();
-        }
-
-        return ResponseEntity.ok(universities);
+    @PostMapping("/register")
+    public UniversityDTO registerUniversity(@RequestBody UniversityDTO universityDTO) {
+        return universityService.addUniversity(universityDTO);
     }
 
-    @DeleteMapping(value = "/{id}")
-    public @ResponseBody ResponseEntity<?> deleteUniversity(@PathVariable Long id) {
-        University university = universityService.deleteUniversityById(id);
-
-        if (university == null) {
-            return new ResponseEntity<>("University{\"id\": " + id + "} was not found", HttpStatus.NOT_FOUND);
-        }
-
-        return ResponseEntity.ok("University{\"id\": " + id + "} was deleted");
+    @DeleteMapping("/{id}")
+    public void deleteUniversityById(@PathVariable Long id) {
+        universityService.deleteUniversityById(id);
     }
 
-    @DeleteMapping(value = "/all")
-    public ResponseEntity<String> deleteAllUniversities() {
+    @DeleteMapping("/all")
+    public void deleteUniversityById() {
         universityService.deleteAll();
-
-        return ResponseEntity.ok("All universities were deleted");
     }
 
-    @GetMapping("/filter/name")
-    public ResponseEntity<List<University>> filterUniversitiesByName(@RequestParam("name") String name) {
-        List<University> filteredUniversities = universityService.filterUniversitiesByName(name);
-
-        return ResponseEntity.ok(filteredUniversities);
-    }
-
-    @GetMapping("/filter/creationDate")
-    public ResponseEntity<List<University>> filterUniversitiesByDate(@RequestParam("date") LocalDate date) {
-        List<University> filteredUniversities = universityService.filterUniversitiesByDate(date);
-
-        return ResponseEntity.ok(filteredUniversities);
+    @GetMapping("/filtered")
+    public List<UniversityDTO> getUniversities(@RequestParam String filteredBy, @RequestParam String value) {
+        return universityService.getFilteredUniversities(filteredBy, value);
     }
 }
