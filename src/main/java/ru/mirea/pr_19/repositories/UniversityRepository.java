@@ -11,7 +11,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Repository
-public interface UniversityRepository extends JpaRepository<University, Long>, JpaSpecificationExecutor<University> {
+public interface UniversityRepository extends JpaRepository<University, Long> {
     List<University> findUniversitiesByNameEquals(String value);
     List<University> findUniversitiesByCreationDateEquals(String creationDate);
 }

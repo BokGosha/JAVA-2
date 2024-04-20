@@ -9,7 +9,7 @@ import ru.mirea.pr_19.entities.Student;
 import java.util.List;
 
 @Repository
-public interface StudentRepository extends JpaRepository<Student, Long>, JpaSpecificationExecutor<Student> {
+public interface StudentRepository extends JpaRepository<Student, Long> {
     List<Student> findStudentsByFirstNameEquals(String value);
     List<Student> findStudentsByMiddleNameEquals(String value);
     List<Student> findStudentsByLastNameEquals(String value);
