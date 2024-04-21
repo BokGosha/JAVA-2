@@ -13,6 +13,8 @@ import java.util.List;
 @Table(name = "universities")
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class University {
     @Id
     @SequenceGenerator(name = "universities_seq", sequenceName = "universities_sequence", allocationSize = 1)

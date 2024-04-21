@@ -9,6 +9,8 @@ import ru.mirea.pr_19.dto.StudentDTO;
 @Table(name = "students")
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Student {
     @Id
     @SequenceGenerator(name = "students_seq", sequenceName = "students_sequence", allocationSize = 1)

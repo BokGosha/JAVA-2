@@ -11,15 +11,16 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
 
-    @Column(name = "username")
     private String username;
-
-    @Column(name = "password")
     private String password;
+
+    public UserEntity(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 }
