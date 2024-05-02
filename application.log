@@ -1,0 +1,1110 @@
+663  [restartedMain] INFO  ru.mirea.pr_19.Pr19Application
+                – Starting Pr19Application using Java 21.0.2 with PID 14400 (D:\Projects\IdeaProjects\pr_19\build\classes\java\main started by BatMan in D:\Projects\IdeaProjects\pr_19)
+672  [restartedMain] DEBUG ru.mirea.pr_19.Pr19Application
+                – Running with Spring Boot v3.2.4, Spring v6.1.5
+673  [restartedMain] INFO  ru.mirea.pr_19.Pr19Application
+                – No active profile set, falling back to 1 default profile: "default"
+717  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+718  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1381 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1424 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2283 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+2292 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2293 [restartedMain] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2294 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.19]
+2334 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2335 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1616 ms
+2438 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+2644 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4aad4ade
+2645 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+2737 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2785 [restartedMain] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+2813 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+3047 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+4037 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+4137 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4899 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5151 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64f31e96, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6989843f, org.springframework.security.web.context.SecurityContextHolderFilter@58912d82, org.springframework.security.web.header.HeaderWriterFilter@6dca8d26, org.springframework.security.web.authentication.logout.LogoutFilter@173ee449, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4379c1c6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7bcb969a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3c300f98, org.springframework.security.web.session.ConcurrentSessionFilter@7ff1a4c6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4e967c0b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41771cb7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@537ca331, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ad1b4ce, org.springframework.security.web.session.SessionManagementFilter@74ee5766, org.springframework.security.web.access.ExceptionTranslationFilter@4a9f4a33, org.springframework.security.web.access.intercept.AuthorizationFilter@6be67c04]
+5448 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                – LiveReload server is running on port 35729
+5482 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+5497 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+5506 [restartedMain] INFO  ru.mirea.pr_19.Pr19Application
+                – Started Pr19Application in 5.183 seconds (process running for 6.198)
+5521 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+5614 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 93ms
+5617 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+5623 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 6ms
+5624 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 110ms
+15631 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+15633 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+15633 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+15635 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+15635 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 6ms
+25639 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+25641 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+25642 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+25644 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+25644 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 7ms
+31767 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+31768 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+31769 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+35650 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+35652 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+35652 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+35654 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+35654 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 6ms
+45674 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+45675 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 1ms
+45676 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+45678 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+45679 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 8ms
+55696 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+55698 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+55698 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+55700 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+55700 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 5ms
+65707 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+65709 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+65710 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+65712 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+65712 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 8ms
+68313 [http-nio-8080-exec-2] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 312ms
+70361 [http-nio-8080-exec-10] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 9ms
+70677 [http-nio-8080-exec-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+70678 [http-nio-8080-exec-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 1ms
+75721 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+75722 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 1ms
+75723 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+75724 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 1ms
+75725 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 7ms
+85738 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+85738 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+85738 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+85738 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+85738 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+93350 [http-nio-8080-exec-6] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+93352 [http-nio-8080-exec-6] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+95751 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+95751 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+95751 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+95751 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+95751 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+105771 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+105771 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+105771 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+105771 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+105771 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+115795 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+115795 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+115795 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+115795 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+115795 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+125803 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+125803 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+125803 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+125803 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+125803 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+135823 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+135825 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+135826 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+135827 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 1ms
+135828 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 7ms
+145840 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+145842 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+145842 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+145844 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+145844 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 6ms
+155858 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+155858 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+155858 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+155858 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+155858 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+165873 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+165873 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+165873 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+165873 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+165873 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+175882 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+175882 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+175882 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+175882 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+175882 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+185905 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+185905 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+185905 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+185905 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+185905 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+195911 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+195913 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+195914 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+195915 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 1ms
+195915 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 5ms
+205926 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+205927 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 1ms
+205927 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+205929 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+205930 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 6ms
+215936 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+215938 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+215938 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+215940 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+215941 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 6ms
+225956 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+225956 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+225956 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+225956 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+225956 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+235973 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+235973 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+235973 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+235973 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+235973 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+245992 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+245992 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+245992 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+245992 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+245992 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+256003 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+256003 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+256003 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+256003 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+256003 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+266021 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+266021 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+266021 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+266021 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+266021 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+276034 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+276034 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+276034 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+276034 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+276034 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+286053 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+286053 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+286053 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+286053 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+286053 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+296063 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+296065 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 1ms
+296065 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+296067 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+296067 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 5ms
+306070 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+306071 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 1ms
+306073 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+306074 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 1ms
+306074 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 5ms
+316084 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+316084 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+316084 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+316084 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+316084 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+326104 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+326104 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+326104 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+326104 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+326104 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+336116 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+336118 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+336118 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+336118 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+336118 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 4ms
+346127 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+346127 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+346127 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+346127 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+346127 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+356134 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+356134 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+356134 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+356134 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+356134 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+366155 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+366155 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+366155 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+366155 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+366155 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+376168 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+376168 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+376168 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+376168 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+376168 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+386180 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+386180 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+386180 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+386180 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+386180 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+396187 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+396187 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+396187 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+396187 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+396187 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+406199 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+406199 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+406199 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+406199 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+406199 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+416218 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+416218 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+416218 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+416218 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+416218 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+426235 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+426236 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 1ms
+426237 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+426238 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 1ms
+426238 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 5ms
+436242 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+436242 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+436242 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+436242 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+436242 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+446262 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+446262 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+446262 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+446262 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+446262 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+456276 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+456278 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+456278 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+456280 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+456280 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 5ms
+466281 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+466281 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+466281 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+466281 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+466281 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+476302 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+476302 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+476302 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+476302 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+476302 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+478932 [http-nio-8080-exec-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Add student: StudentDTO(id=null, firstName=M, middleName=Bokoev, lastName=E, universityId=null)
+478932 [http-nio-8080-exec-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+486311 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+486311 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+486311 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+486311 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+486311 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+490601 [http-nio-8080-exec-2] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Add university UniversityDTO(id=null, name=MISIS, creationDate=22-01-1990, students=[])
+490617 [http-nio-8080-exec-2] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+496333 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+496333 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+496333 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+496349 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+496349 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+506356 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+506360 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 4ms
+506360 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+506360 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+506360 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 8ms
+516375 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+516375 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+516375 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+516375 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+516375 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+520287 [http-nio-8080-exec-5] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Add student: StudentDTO(id=null, firstName=M, middleName=Bokoev, lastName=E, universityId=null)
+520287 [http-nio-8080-exec-5] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+526391 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+526391 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+526391 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+526391 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+526391 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+529018 [http-nio-8080-exec-6] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+529018 [http-nio-8080-exec-6] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+536405 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+536405 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+536405 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+536405 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+536405 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+546421 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+546421 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+546421 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+546421 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+546421 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+556439 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+556439 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+556439 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+556439 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+556448 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 9ms
+566450 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+566450 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+566450 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+566450 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+566450 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+576472 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+576472 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+576472 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+576472 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+576472 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+586483 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+586483 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+586483 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+586483 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+586483 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+592171 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+592171 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+592187 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+657  [restartedMain] INFO  ru.mirea.pr_19.Pr19Application
+                – Starting Pr19Application using Java 21.0.2 with PID 12840 (D:\Projects\IdeaProjects\pr_19\build\classes\java\main started by BatMan in D:\Projects\IdeaProjects\pr_19)
+657  [restartedMain] DEBUG ru.mirea.pr_19.Pr19Application
+                – Running with Spring Boot v3.2.4, Spring v6.1.5
+657  [restartedMain] INFO  ru.mirea.pr_19.Pr19Application
+                – No active profile set, falling back to 1 default profile: "default"
+693  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+693  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1247 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1294 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2122 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+2131 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2133 [restartedMain] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2133 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.19]
+2174 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2174 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1481 ms
+2277 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+2454 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b3c3b17
+2456 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+2536 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2582 [restartedMain] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+2610 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+2853 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+3780 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+3871 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4553 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4808 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a1a9d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cf41fb9, org.springframework.security.web.context.SecurityContextHolderFilter@592859f3, org.springframework.security.web.header.HeaderWriterFilter@508adab4, org.springframework.security.web.authentication.logout.LogoutFilter@2388b28f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4b8af718, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7d8353b6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4ce4182f, org.springframework.security.web.session.ConcurrentSessionFilter@8f1594f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@356bc5c5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@712432c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@326223d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fda0b6, org.springframework.security.web.session.SessionManagementFilter@366bbb5e, org.springframework.security.web.access.ExceptionTranslationFilter@6ba05e61, org.springframework.security.web.access.intercept.AuthorizationFilter@5f0d17ed]
+5083 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                – LiveReload server is running on port 35729
+5120 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+5135 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+5144 [restartedMain] INFO  ru.mirea.pr_19.Pr19Application
+                – Started Pr19Application in 4.846 seconds (process running for 5.552)
+5159 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+5243 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 84ms
+5246 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+5252 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 6ms
+5253 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 101ms
+15270 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+15272 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+15273 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+15275 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+15276 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 8ms
+15683 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+15684 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+15685 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+25290 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+25292 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+25293 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+25296 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 3ms
+25297 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 10ms
+35309 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+35312 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 3ms
+35313 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+35317 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 4ms
+35318 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 12ms
+45325 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+45325 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+45325 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+45325 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+45325 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+55338 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+55338 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+55338 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+55338 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+55338 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+65357 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+65357 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+65357 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+65357 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+65357 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+75374 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+75374 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+75374 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+75374 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+75374 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+78022 [http-nio-8080-exec-4] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 581ms
+81685 [http-nio-8080-exec-7] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 94ms
+85395 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+85395 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+85395 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+85395 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+85395 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+87150 [http-nio-8080-exec-9] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+87153 [http-nio-8080-exec-9] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 3ms
+95410 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+95410 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+95410 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+95410 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+95410 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+105426 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+105441 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 15ms
+105441 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+105441 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+105441 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 15ms
+115462 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+115462 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+115462 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+115462 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+115462 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+118141 [http-nio-8080-exec-10] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Add university UniversityDTO(id=null, name=MISIS, creationDate=22-01-1990, students=[])
+118172 [http-nio-8080-exec-10] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 31ms
+124448 [http-nio-8080-exec-2] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Add student: StudentDTO(id=null, firstName=M, middleName=Bokoev, lastName=E, universityId=null)
+124448 [http-nio-8080-exec-2] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+125484 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+125505 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 21ms
+125505 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+125521 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+125521 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 41ms
+126260 [task-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 1812ms
+135541 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+135541 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+135541 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+135541 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+135556 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 15ms
+145628 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+145644 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+145648 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+145652 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 4ms
+145659 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 81ms
+155666 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+155673 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 7ms
+155673 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+155673 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+155673 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 7ms
+165692 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+165692 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+165692 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+165708 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+165708 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+174065 [http-nio-8080-exec-4] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+174065 [http-nio-8080-exec-4] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+175723 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+175723 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+175723 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+175739 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+175739 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+185749 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+185749 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+185764 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+185764 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+185764 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 15ms
+195777 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+195777 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+195777 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+195792 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 15ms
+195792 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 15ms
+202086 [http-nio-8080-exec-7] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+202101 [http-nio-8080-exec-7] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 15ms
+205799 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+205799 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+205799 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+205815 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+205815 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+215832 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+215847 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 15ms
+215848 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+215848 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+215848 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+225868 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+225868 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+225868 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+225884 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+225884 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+235894 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+235898 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 4ms
+235900 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+235902 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 2ms
+235904 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 14ms
+592  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Find student with id 1
+779  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Add student: StudentDTO(id=0, firstName=����, middleName=������, lastName=��������, universityId=null)
+921  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Find students filtered by firstName with value ����
+968  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Delete student with id 0
+968  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Find all students
+245915 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+245915 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+245915 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+245930 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 15ms
+245930 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 15ms
+255938 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+255938 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+255938 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+255953 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 15ms
+255953 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 15ms
+265963 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+265963 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+265963 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+265979 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+265979 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 16ms
+275993 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+275999 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 6ms
+276001 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+276004 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 3ms
+276008 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 20ms
+286032 [scheduling-1] INFO  r.m.p.s.impl.UniversityServiceImpl
+                – Find all universities
+286032 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 0ms
+286032 [scheduling-1] INFO  r.m.p.s.impl.StudentServiceImpl
+                – Find all students
+286047 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 15ms
+286047 [scheduling-1] INFO  r.m.pr_19.aspect.TimeLoggingAspect
+                – Method execution time: 15ms
+294964 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+294964 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+294980 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+522  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Find student with id 1
+721  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Add student: StudentDTO(id=0, firstName=����, middleName=������, lastName=��������, universityId=null)
+815  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Find students filtered by firstName with value ����
+878  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Delete student with id 0
+878  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Find all students
+565  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Find student with id 1
+732  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Add student: StudentDTO(id=0, firstName=����, middleName=������, lastName=��������, universityId=null)
+815  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Find students filtered by firstName with value ����
+864  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Delete student with id 0
+864  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Find all students
+613  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Find student with id 0
+820  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Add student: StudentDTO(id=0, firstName=����, middleName=������, lastName=��������, universityId=null)
+914  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Find students filtered by firstName with value ����
+945  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Delete student with id 0
+961  [Test worker] INFO  r.m.p.s.impl.StudentServiceImpl
+                � Find all students

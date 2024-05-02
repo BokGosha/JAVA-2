@@ -16,7 +16,6 @@ import java.util.List;
 @Slf4j
 public class StudentServiceImpl implements StudentService {
     private final StudentRepository studentRepository;
-    private final EmailService emailService;
 
     @Override
     public List<StudentDTO> getStudents() {
@@ -41,9 +40,6 @@ public class StudentServiceImpl implements StudentService {
         student.setFirstName(studentDTO.getFirstName());
         student.setMiddleName(studentDTO.getMiddleName());
         student.setLastName(studentDTO.getLastName());
-
-        //String message = "Student " + student.getFirstName() + " was saved";
-        //emailService.sendEmail(message);
 
         studentRepository.save(student);
 

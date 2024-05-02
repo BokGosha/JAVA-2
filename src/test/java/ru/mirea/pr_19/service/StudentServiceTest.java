@@ -46,7 +46,7 @@ public class StudentServiceTest {
     @Test
     @DisplayName("Тестирование StudentService#getStudentById")
     public void getStudentByIdShouldReturnStudent() {
-        Mockito.when(studentRepository.findById(1L)).thenReturn(Optional.ofNullable(entities.get(1)));
+        Mockito.when(studentRepository.findById(0L)).thenReturn(Optional.ofNullable(entities.getFirst()));
 
         StudentServiceImpl studentService = new StudentServiceImpl(
                 studentRepository,
@@ -54,8 +54,8 @@ public class StudentServiceTest {
         );
 
         Assertions.assertThat(
-                studentService.getStudentById(1L).getFirstName()
-        ).isEqualTo(entities.get(1).getFirstName());
+                studentService.getStudentById(0L).getFirstName()
+        ).isEqualTo(entities.getFirst().getFirstName());
     }
 
     @Test

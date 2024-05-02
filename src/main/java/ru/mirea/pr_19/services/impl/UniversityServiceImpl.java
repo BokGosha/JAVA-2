@@ -17,7 +17,6 @@ import java.util.List;
 @Slf4j
 public class UniversityServiceImpl implements UniversityService {
     private final UniversityRepository universityRepository;
-    private final EmailService emailService;
 
     @Override
     public List<UniversityDTO> getUniversities() {
@@ -41,9 +40,6 @@ public class UniversityServiceImpl implements UniversityService {
 
         university.setName(universityDTO.getName());
         university.setCreationDate(universityDTO.getCreationDate());
-
-        //String message = "University " + university.getName() + " was saved";
-        //emailService.sendEmail(message);
 
         universityRepository.save(university);
 

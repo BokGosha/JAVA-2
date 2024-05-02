@@ -2,8 +2,8 @@ package ru.mirea.pr_19.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.stereotype.Controller;
 
+import ru.mirea.pr_19.services.EmailService;
 import ru.mirea.pr_19.dto.StudentDTO;
 import ru.mirea.pr_19.services.*;
 
@@ -14,6 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class StudentController {
     private final StudentService studentService;
+    private final EmailService emailService;
 
     @GetMapping
     public List<StudentDTO> getStudents() {
@@ -27,6 +28,9 @@ public class StudentController {
 
     @PostMapping("/register")
     public StudentDTO registerStudent(@RequestBody StudentDTO studentDTO) {
+        String message = "Student " + studentDTO.getFirstName() + " was saved";
+        emailService.sendEmail(message);
+
         return studentService.addStudent(studentDTO);
     }
 
