@@ -15,13 +15,11 @@ import java.util.List;
 import java.util.Optional;
 
 public class UniversityServiceTest {
-    private static EmailService emailService;
     private static UniversityRepository universityRepository;
     private static List<University> entities;
 
     @BeforeAll
     public static void init() {
-        emailService = Mockito.mock(EmailService.class);
         universityRepository = Mockito.mock(UniversityRepository.class);
 
         entities = List.of(
@@ -37,7 +35,7 @@ public class UniversityServiceTest {
     @DisplayName("Тестирование UniversityService#getUniversities")
     public void getUniversitiesShouldReturnUniversities() {
         UniversityServiceImpl universityService = new UniversityServiceImpl(
-                universityRepository, emailService
+                universityRepository
         );
 
         Assertions.assertThat(
@@ -51,8 +49,7 @@ public class UniversityServiceTest {
         Mockito.when(universityRepository.findById(1L)).thenReturn(Optional.ofNullable(entities.get(1)));
 
         UniversityServiceImpl universityService = new UniversityServiceImpl(
-                universityRepository,
-                emailService
+                universityRepository
         );
 
         Assertions.assertThat(
@@ -64,8 +61,7 @@ public class UniversityServiceTest {
     @DisplayName("Тестирование UniversityService#addUniversity")
     public void addUniversityShouldAddUniversity() {
         UniversityServiceImpl universityService = new UniversityServiceImpl(
-                universityRepository,
-                emailService
+                universityRepository
         );
 
         universityService.addUniversity(new UniversityDTO(0L, "МГУ", "22-01-1990", List.of()));
@@ -79,8 +75,7 @@ public class UniversityServiceTest {
     @DisplayName("Тестирование UniversityService#deleteUniversityById")
     public void deleteUniversityByIdShouldDeleteUniversity() {
         UniversityServiceImpl universityService = new UniversityServiceImpl(
-                universityRepository,
-                emailService
+                universityRepository
         );
 
         universityService.deleteUniversityById(0L);
@@ -92,8 +87,7 @@ public class UniversityServiceTest {
     @DisplayName("Тестирование UniversityService#getFilteredUniversities")
     public void getFilteredUniversitiesShouldReturnFilteredUniversities() {
         UniversityServiceImpl universityService = new UniversityServiceImpl(
-                universityRepository,
-                emailService
+                universityRepository
         );
 
         var filtered = entities.stream().filter(x -> x.getName().equals("МИРЭА")).toList();

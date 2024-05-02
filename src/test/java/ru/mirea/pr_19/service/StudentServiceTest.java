@@ -15,13 +15,11 @@ import java.util.List;
 import java.util.Optional;
 
 public class StudentServiceTest {
-    private static EmailService emailService;
     private static StudentRepository studentRepository;
     private static List<Student> entities;
 
     @BeforeAll
     public static void init() {
-        emailService = Mockito.mock(EmailService.class);
         studentRepository = Mockito.mock(StudentRepository.class);
 
         entities = List.of(
@@ -36,7 +34,7 @@ public class StudentServiceTest {
     @Test
     @DisplayName("Тестирование StudentService#getStudents")
     public void getStudentsShouldReturnStudents() {
-        StudentServiceImpl studentService = new StudentServiceImpl(studentRepository, emailService);
+        StudentServiceImpl studentService = new StudentServiceImpl(studentRepository);
 
         Assertions.assertThat(
                 studentService.getStudents()
@@ -49,8 +47,7 @@ public class StudentServiceTest {
         Mockito.when(studentRepository.findById(0L)).thenReturn(Optional.ofNullable(entities.getFirst()));
 
         StudentServiceImpl studentService = new StudentServiceImpl(
-                studentRepository,
-                emailService
+                studentRepository
         );
 
         Assertions.assertThat(
@@ -62,8 +59,7 @@ public class StudentServiceTest {
     @DisplayName("Тестирование StudentService#addStudent")
     public void addStudentShouldAddStudent() {
         StudentServiceImpl studentService = new StudentServiceImpl(
-                studentRepository,
-                emailService
+                studentRepository
         );
 
         studentService.addStudent(new StudentDTO(0L, "Иван", "Иванов", "Иванович", null));
@@ -77,8 +73,7 @@ public class StudentServiceTest {
     @DisplayName("Тестирование StudentService#deleteStudentById")
     public void deleteStudentByIdShouldDeleteStudent() {
         StudentServiceImpl studentService = new StudentServiceImpl(
-                studentRepository,
-                emailService
+                studentRepository
         );
 
         studentService.deleteStudentById(0L);
@@ -90,8 +85,7 @@ public class StudentServiceTest {
     @DisplayName("Тестирование StudentService#getFilteredStudents")
     public void getFilteredStudentsShouldReturnFilteredStudents() {
         StudentServiceImpl studentService = new StudentServiceImpl(
-                studentRepository,
-                emailService
+                studentRepository
         );
 
         var filtered = entities.stream().filter(x -> x.getFirstName().equals("Иван")).toList();
